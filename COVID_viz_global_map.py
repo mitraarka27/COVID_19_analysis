@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Author: Arka Mitra
-13th March 2020, 8:00pm, 
+20th March 2020, 4:00pm, 
 Champaign, Illinois, USA
 
 Data is sourced from:  
@@ -102,4 +102,4 @@ while start_date <= end_date:
     plot_frame_from_data(covid_data, start_date.strftime("%m-%d-%Y"))
     images.append(imageio.imread('COVID19_'+str(start_date.strftime("%m-%d-%Y"))+'.jpeg'))
     start_date += delta
-imageio.mimsave('movie.gif', images , fps=0.8)
+imageio.mimsave('COVID19_global_spread_ts.gif', images , fps=0.8)
